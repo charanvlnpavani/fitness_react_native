@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet } from "react-native";
 import { useLocalSearchParams } from "expo-router";
+import DetailsAdd from "./detailsAdd";
 
 export default function ProfileScreen() {
   const { id } = useLocalSearchParams();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Profile ID: {id}</Text>
+      <DetailsAdd />
     </View>
   );
 }
